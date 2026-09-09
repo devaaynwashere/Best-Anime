@@ -248,6 +248,16 @@
             border-top: 1px solid var(--border);
         }
 
+        .site-note {
+            margin: 0 auto 3rem;
+            padding: 1.2rem 1.4rem;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            color: var(--muted);
+            max-width: 900px;
+        }
+
         @media (max-width: 760px) {
             .anime-card {
                 grid-template-columns: 1fr;
@@ -263,28 +273,32 @@
         }
     </style>
 </head>
-<body>
+<body id="top">
     <header class="site-header">
         <div class="container brand">
             <h1><span>Anime</span>Verse</h1>
             <nav class="main-nav" aria-label="Main navigation">
-                <a href="#">Home</a>
-                <a href="#">Trending</a>
-                <a href="#">Top 10</a>
-                <a href="#">Reviews</a>
-                <a href="#" class="nav-cta">Watchlist</a>
+                <a href="#top">Home</a>
+                <a href="#featured">Trending</a>
+                <a href="#rankings">Top 10</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#rankings" class="nav-cta">Watchlist</a>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="hero" aria-labelledby="page-title">
-            <div class="eyebrow">Curated picks</div>
+        <section class="hero" id="featured" aria-labelledby="page-title">
+            <div class="eyebrow">Top 10 anime rankings</div>
             <h2 id="page-title">Best Anime of 2026</h2>
             <p>Get ready to discover the best anime of 2026, packed with epic battles, hilarious moments, thrilling adventures, mysterious worlds, emotional stories, and unforgettable characters. Whether you love intense action, deep storytelling, or heartfelt friendships, this list has something for every anime fan.</p>
         </section>
 
-        <section aria-labelledby="anime-list-heading">
+        <section id="reviews" class="site-note" aria-label="Why this list matters">
+            <strong>Why fans love this ranking:</strong> This list highlights the most influential, emotional, and unforgettable anime series based on story quality, character arcs, fan impact, and action-packed storytelling.
+        </section>
+
+        <section id="rankings" aria-labelledby="anime-list-heading">
             <h2 id="anime-list-heading" style="display:none;">Top anime list</h2>
             <ol class="anime-list" start="10" reversed>
                 <li>
