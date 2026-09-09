@@ -92,9 +92,40 @@
             color: var(--primary-soft);
         }
 
+        .main-nav {
+            display: flex;
+            gap: 1.1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .main-nav a {
+            color: var(--muted);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .main-nav a:hover {
+            color: var(--primary-soft);
+            text-decoration: none;
+        }
+
+        .nav-cta {
+            padding: 0.7rem 1rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%);
+            color: #111827 !important;
+            font-weight: 800;
+        }
+
         .hero {
             padding: 4rem 0 2rem;
             text-align: center;
+            background:
+                radial-gradient(circle at top, rgba(245, 158, 11, 0.18), transparent 40%),
+                linear-gradient(180deg, rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.15));
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 1rem;
         }
 
         .eyebrow {
@@ -236,6 +267,13 @@
     <header class="site-header">
         <div class="container brand">
             <h1><span>Anime</span>Verse</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#">Home</a>
+                <a href="#">Trending</a>
+                <a href="#">Top 10</a>
+                <a href="#">Reviews</a>
+                <a href="#" class="nav-cta">Watchlist</a>
+            </nav>
         </div>
     </header>
 
