@@ -1,6 +1,0 @@
-{
-  "routes": [
-    { "src": "/", "dest": "/Anime.html" },
-    { "src": "/index.html", "dest": "/Anime.html" }
-  ]
-}
